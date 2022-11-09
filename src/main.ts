@@ -9,6 +9,6 @@ class Director {
 function execute() {
   const app = Director.construct();
 
-  app.sayHello();
+  console.log(app.sayHello());
 }
 execute();
