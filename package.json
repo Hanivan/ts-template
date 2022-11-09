@@ -1,0 +1,28 @@
+{
+  "name": "ts-template",
+  "version": "1.0.0",
+  "main": "main.js",
+  "repository": "https://github.com/Hanivan/ts-template",
+  "author": "Hanivan Rizky S",
+  "license": "UNLICENSED",
+  "private": true,
+  "scripts": {
+    "build": "./node_modules/.bin/tsc",
+    "watch": "./node_modules/.bin/nodemon ./dist/main.js",
+    "build:webpack:dev": "./node_modules/.bin/webpack --mode development --watch",
+    "build:webpack:prod": "./node_modules/.bin/webpack --mode production",
+    "start:dev": "./node_modules/.bin/tsc -w"
+  },
+  "devDependencies": {
+    "@types/node": "14.18.3",
+    "nodemon": "^2.0.20",
+    "ts-loader": "^9.4.1",
+    "typescript": "^4.8.4",
+    "webpack": "^5.74.0",
+    "webpack-cli": "^4.10.0"
+  },
+  "dependencies": {
+    "moment": "^2.29.4",
+    "source-map-support": "^0.5.21"
+  }
+}
